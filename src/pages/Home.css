@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Supermercado+One&display=swap');
+
+.styled-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    font-size: .9rem;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.styled-table thead tr{
+    background-color: #3f37c9;
+    color: #ffff;
+    /* font-family: 'Supermercado One', cursive; */
+    letter-spacing: 1px;
+    font-size: large;
+    font-family: 'Bebas Neue', cursive;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td{
+    padding: 12px 15px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: large;
+}
+
+.styled-table tbody tr{
+    /* border-radius: 10px; */
+    border-bottom: 1px solid #dddd;
+}
+.styled-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.styled-table tbody tr:last-of-type{
+    border-bottom: 2px solid #3f37c9;
+}
+.btn{
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    padding: 5px 8px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-edit{
+    background-color: #4895ef;
+}
+.btn-delete{
+    background-color: crimson;
+}
+.btn-view{
+background-color: #e5e5e5;
+color: black;
+}
+
+@media screen and (max-width:500px){
+.styled-table th,.styled-table td{
+    font-size: 15px;
+    /* height: 10px; */
+}
+.styled-table {
+    width: 10vw;
+    /* font-size: 1px; */
+    margin-right: 100px;
+}
+}
